@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import SimpleClick from './components/simpleClick'
+import AsyncClick from './components/asyncClick'
+
+
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="sync" >
+    <header>Synchronous:</header>
+    <SimpleClick />
+    </div>
+    <div className="async" >
+    <header>Asynchronous:</header>
+    <AsyncClick />
+    </div>
     </div>
   );
 }
+
 
 export default App;
